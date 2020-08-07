@@ -25,7 +25,7 @@ class Generator {
     drawRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
     generateQuotation = () => {
-        document.querySelector("button").addEventListener("click", (e) => {
+        document.querySelector("button").addEventListener("click", () => {
             this.printQuotation(this.firstSegment[this.drawRandomNumber(0, 9)] + ", " +
             this.secondSegment[this.drawRandomNumber(0, 9)] + " " +
             this.thirdSegment[this.drawRandomNumber(0, 9)] + ".");           
